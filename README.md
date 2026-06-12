@@ -224,14 +224,17 @@ RMSSD reflects parasympathetic activity (normal range: 20–50 ms; < 20 ms indic
 | P4 | 0.450 | 0.506 | 0.379 | 0.629 |
 
 
-![Pipeline Graph](figures/LFHF.png)
+![Pipeline Graph](figures/LFHF.png
+
 The LF/HF ratio reflects sympathovagal balance (< 0.5: parasympathetic dominance; 0.5–2.0: normal range; > 2.5: sympathetic hyperactivation). Results aligned with the expected calm < fear pattern: fear conditions consistently elicited higher LF/HF ratios. Notably, P3 showed ratios < 0.5 during calm, highlighting pronounced parasympathetic activity.
+
 <table>
   <tr>
     <td><img src="figures/P3.png" width="400"/></td>
     <td><img src="figures/P4.png" width="400"/></td>
   </tr>
 </table>
+
 **Moving Window Analysis:** Dynamic patterns were revealed that static averages obscure. P3 demonstrated gradual emotional accumulation, with fear ratios (S4, S15) climbing over time. P4 exhibited strong initial arousal followed by rapid habituation.
 
 
