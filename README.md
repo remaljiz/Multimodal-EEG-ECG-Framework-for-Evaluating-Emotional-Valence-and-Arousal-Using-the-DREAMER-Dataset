@@ -275,6 +275,7 @@ The LF/HF ratio reflects sympathovagal balance (< 0.5: parasympathetic dominance
 
 ![Pipeline Graph](figures/Emotion.png)
 ![Pipeline Graph](figures/Emotion_model.png)
+
 By mapping αF4/αF3 and LF/HF values onto Russell's Circumplex Model of Affect, results largely aligned with theoretical expectations. The calm condition (S11) demonstrated higher valence and lower arousal, whereas the fear condition (S15) exhibited lower valence and higher arousal — illustrating that calm and fear elicit distinct, measurable shifts in both frontal cortical asymmetry and autonomic heart rate variability.
 
 **Limitations:**
