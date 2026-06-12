@@ -1,4 +1,5 @@
 # Multimodal EEG ECG Framework for Evaluating Emotional Valence and Arousal Using the DREAMER Dataset
+## Introduction
 Affective information processing is a fundamental cognitive mechanism through which humans evaluate environmental stimuli and adjust attention, behavior, and physiological states. According to Russell’s Circumplex Model of Affect, emotions can be described along two orthogonal dimensions: valence, referring to the degree of pleasantness, and arousal, referring to the intensity of physiological activation. Examining how neural and cardiac signals change during emotional evaluation is therefore important for understanding human affective responses and improving human-computer interaction.
 
 <img width="739" height="388" alt="image" src="https://github.com/user-attachments/assets/d5cc5939-8d6e-4daa-b5cf-be67fbc22fd5" />
