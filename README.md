@@ -79,9 +79,11 @@ Time-series signals and Power Spectral Density (PSD) before and after preprocess
 ![Pipeline Graph](figures/ECG_PSD.png)
 
 </details>
-## NeuroPype Pipeline
+
+## 4. NeuroPype Pipeline
 
 ![Pipeline Graph](figures/pipeline.png)
+https://drive.google.com/file/d/1cDDj1-EVk4VkKCEZEuVvr-xp128mZdFV/view?usp=drive_link
 
 <details>
 <summary> How to Run </summary>
