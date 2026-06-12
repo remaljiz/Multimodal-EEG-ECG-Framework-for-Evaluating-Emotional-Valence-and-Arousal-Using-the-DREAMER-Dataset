@@ -90,7 +90,7 @@ At ~9–12s, a slow bilateral baseline drift is observed across multiple channel
   
   <details>
   <summary> ECG Spectral</summary>
-    Power Spectral Density (PSD) before and after bandpass filtering
+    Power Spectral Density (PSD) before and after bandpass filtering:
     
   ![Pipeline Graph](figures/ECG_PSD_1.png)
   ![Pipeline Graph](figures/ECG_PSD_2.png)
