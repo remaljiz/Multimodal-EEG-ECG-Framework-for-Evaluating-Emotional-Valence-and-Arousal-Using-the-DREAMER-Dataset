@@ -101,6 +101,8 @@ At ~9–12s, a slow bilateral baseline drift is observed across multiple channel
 ## 4. NeuroPype Pipeline
 
 ![Pipeline Graph](figures/pipeline.png)
+
+Click the link below for complete information:
 https://drive.google.com/file/d/1cDDj1-EVk4VkKCEZEuVvr-xp128mZdFV/view?usp=drive_link
 
 <details>
