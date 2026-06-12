@@ -105,6 +105,68 @@ At ~9–12s, a slow bilateral baseline drift is observed across multiple channel
 Click the below for complete information:
 https://drive.google.com/file/d/1cDDj1-EVk4VkKCEZEuVvr-xp128mZdFV/view?usp=drive_link
 
+
+<details>
+<summary>Pipeline Architecture & Workflow</summary>
+
+### EEG Pipeline
+
+![Pipeline Graph](figures/EEG_pipeline_1.png)
+| Node | Function |
+|------|----------|
+| `ImportFile` | Load the EDF file containing synchronized EEG and ECG recordings |
+| `SeparateStreams` | Separate EEG and ECG into independent processing streams |
+| `StreamData / DejitterTimestamps` | Correct irregular timestamps from wireless transmission latency |
+| `AssignChannelLocations` | Assign 10-20 electrode positions required for CAR referencing |
+| `RemoveUnlocalizedChannels` | Remove channels without spatial location information |
+| `FIRFilter [0.25, 4, 30, 50 Hz]` | Bandpass filter to retain EEG-relevant frequencies (4–30 Hz), removing DC offset and high-frequency noise |
+| `Detrend` | Remove residual low-frequency baseline drift |
+| `ArtifactRemoval (ASR, threshold=15)` | Remove high-amplitude artifacts caused by movement and muscle activity |
+| `Rereferencing (CAR)` | Apply Common Average Reference to reduce spatial bias from electrode placement |
+
+![Pipeline Graph](figures/EEG_pipeline_2.png)
+| `MovingWindow (3s) → MultitaperSpectrum → Averages` | Compute band power for delta, theta, alpha, beta, gamma |
+| `SelectRange (F4) / (F3) → Divide` | Compute FAA ratio (α F4 / α F3) for valence estimation |
+
+### ECG Pipeline
+
+![Pipeline Graph](figures/ECG_pipeline_1.png)
+| Node | Function |
+|------|----------|
+| `SelectRange (ECG_diff)` | Select the ECG channel |
+| `FIRFilter [5, 10, 45, 50 Hz]` | Remove T-wave low-frequency components that cause R-peak misdetection, while preserving R-peak energy (8–20 Hz) |
+
+![Pipeline Graph](figures/ECG_pipeline_2.png)
+| `RDetection (sensitivity=0.25)` | Detect R peaks using adaptive threshold |
+| `HeartRateVariability (window=55s)` | Extract RMSSD and RRI from detected R peaks |
+| `MovingWindow (300s) → WelchSpectrum → SelectRange (LF/HF) → Divide` | Compute LF/HF ratio as autonomic balance indicator |
+
+</details>
+
+<details>
+<summary>Parameter Justification</summary>
+
+### EEG Parameters
+
+| Parameter | Justification |
+|-----------|--------------|
+| `FIRFilter [0.25, 4, 30, 50 Hz]` | Isolates critical brain waves for emotion analysis while removing low-frequency eye blinks and high-frequency muscle noise |
+| `ArtifactRemoval (cutoff=15)` | Detects and cleans sudden signal distortions without compromising genuine EEG signal |
+| `MovingWindow (3s)` | Captures real-time dynamic emotional shifts for frequency analysis |
+| `Averages` | Computes band power for delta (1–4 Hz), theta (4–8 Hz), alpha (8–12 Hz), beta (12–30 Hz), gamma (30–50 Hz) |
+| `SelectRange (space & frequency)` | Isolates frontal electrodes F3 and F4, then targets frequency index 2 to extract alpha band power (8–12 Hz) |
+
+### ECG Parameters
+
+| Parameter | Justification |
+|-----------|--------------|
+| `FIRFilter [5, 10, 45, 50 Hz]` | Removes baseline wander and electrical noise. High-pass cutoff intentionally raised to 10 Hz (stopband at 5 Hz) to suppress abnormally high-amplitude T-waves in this dataset, isolating sharp QRS complexes for accurate R-peak detection |
+| `RDetection (sensitivity=0.25, window=5s)` | Identifies individual heartbeats using a 5.0-second processing window with a relative amplitude threshold of 0.25 |
+| `HeartRateVariability (window=55s)` | 55-second sliding window extracts continuous RRI and RMSSD features |
+| `MovingWindow (300s)` | Buffers RRI for spectral frequency analysis |
+| `SelectRange (LF/HF)` | Selects 0.04–0.15 Hz (LF) and 0.15–0.4 Hz (HF) bands for autonomic balance calculation |
+
+</details>
 <details>
 <summary> How to Run </summary>
   
