@@ -180,9 +180,6 @@ https://drive.google.com/file/d/1cDDj1-EVk4VkKCEZEuVvr-xp128mZdFV/view?usp=drive
     <td><img src="figures/ECG_Rdetect.png" width="400"/></td>
   </tr> 
   <tr>
-    <td><img src="figures/Twave.jpg"/></td>
-  </tr>
-  <tr>
     <td><img src="figures/ECG_HRV.png" width="400"/></td>
     <td><img src="figures/ECG_Movingwindow.png" width="400"/></td>
   </tr>
@@ -196,6 +193,9 @@ https://drive.google.com/file/d/1cDDj1-EVk4VkKCEZEuVvr-xp128mZdFV/view?usp=drive
   </tr>
 </table>
 
+![Pipeline Graph](figures/Twave.jpg)
+ 
+  
 | Parameter | Justification |
 |-----------|--------------|
 | `FIRFilter [5, 10, 45, 50 Hz]` | Removes baseline wander and electrical noise. High-pass cutoff intentionally raised to 10 Hz (stopband at 5 Hz) to suppress abnormally high-amplitude T-waves in this dataset, isolating sharp QRS complexes for accurate R-peak detection |
