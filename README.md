@@ -44,6 +44,41 @@ The data were originally collected to evaluate whether low-cost, wireless, weara
 
 </details>
 
+## 3. Data Preprocessing
+
+<details>
+<summary>Visual Inspection & Artifact Identification</summary>
+
+### Participant 3 — Stimuli 15 (Calm)
+*EEG: 323.42 µV/cm | ECG: 200 µV/cm*
+
+**Eye Blink Artifact**
+At 14–15s, a sharp transient deflection is observed predominantly in frontal channels (AF3, F7, F3, FC5, AF4, F4, F8), with minimal effect on posterior channels (P8, O1, O2). Eye blinks should only appear in frontal leads without spreading to posterior regions.
+
+![Pipeline Graph](figures/eyeblink.png)
+
+---
+
+### Participant 4 — Stimuli 4 (Fear)
+*EEG: 334.48 µV/cm | ECG: 253.04 µV/cm*
+
+**Sweat Artifact & Electrode Disconnection**
+At ~9–12s, a slow bilateral baseline drift is observed across multiple channels (~3s duration, < 0.5 Hz) with no specific topographic pattern — consistent with sweat artifact. Channel F7 shows a flat line throughout, indicating electrode disconnection. At ~12s, an abrupt return to baseline is observed, likely due to a brief head movement.
+
+![Pipeline Graph](figures/sweat.png)
+
+</details>
+
+<details>
+<summary>Spectral & Time-Series Proof</summary>
+
+Time-series signals and Power Spectral Density (PSD) before and after preprocessing (bandpass filtering + artifact removal):
+
+![Pipeline Graph](figures/EEG_time.png)
+![Pipeline Graph](figures/EEG_PSD.png)
+![Pipeline Graph](figures/ECG_PSD.png)
+
+</details>
 ## NeuroPype Pipeline
 
 ![Pipeline Graph](figures/pipeline.png)
