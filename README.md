@@ -177,7 +177,7 @@ https://drive.google.com/file/d/1cDDj1-EVk4VkKCEZEuVvr-xp128mZdFV/view?usp=drive
 <table>
   <tr>
     <td><img src="figures/ECG_FIR.png" width="400"/></td>
-    <td><img src="figures/EEG_Rdetect.png" width="400"/></td>
+    <td><img src="figures/ECG_Rdetect.png" width="400"/></td>
   </tr> 
   <tr>
     <td><img src="figures/Twave.png"/></td>
