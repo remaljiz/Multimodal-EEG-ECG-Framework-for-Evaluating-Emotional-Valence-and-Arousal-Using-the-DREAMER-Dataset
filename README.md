@@ -8,3 +8,11 @@ This project investigates these responses using the DREAMER dataset, which provi
 Two physiological mechanisms were examined. Emotional valence was assessed using EEG-derived Frontal Alpha Asymmetry (FAA), calculated from alpha power in the F3 and F4 frontal channels. Based on Davidson’s Approach-Withdrawal Model, stronger relative left-frontal activation indicates positive affect, whereas right-frontal dominance reflects negative affect. Autonomic arousal was evaluated using ECG-derived Heart Rate Variability (HRV), including RMSSD and the LF/HF ratio. RMSSD reflects parasympathetic regulation, while LF/HF indicates autonomic balance. By integrating EEG and ECG features, this project provides an interpretable multimodal framework for characterizing emotional responses to dynamic visual stimuli.
 
 <img width="754" height="123" alt="image" src="https://github.com/user-attachments/assets/83955075-e445-487e-919e-18cf883ab427" />
+
+
+## Dataset
+
+Raw EEG and ECG signals are sourced from the DREAMER dataset. 
+
+- Kaggle: https://www.kaggle.com/datasets/phhasian0710/dreamer/data
+- Katsigiannis, S., & Ramzan, N. (2018). DREAMER: A database for emotion recognition through EEG and ECG signals from wireless low-cost off-the-shelf devices. *IEEE Journal of Biomedical and Health Informatics*, 22(1), 98–107. https://doi.org/10.1109/JBHI.2017.2688959
