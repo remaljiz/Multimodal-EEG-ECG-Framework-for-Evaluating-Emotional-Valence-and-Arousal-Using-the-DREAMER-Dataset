@@ -74,12 +74,26 @@ At ~9–12s, a slow bilateral baseline drift is observed across multiple channel
 
 Time-series signals and Power Spectral Density (PSD) before and after preprocessing (bandpass filtering + artifact removal):
 
+<details>
+<summary> EEG Time-Series</summary>
+  
 ![Pipeline Graph](figures/EEG_time_1.png)
 ![Pipeline Graph](figures/EEG_time_2.png)
+</details>
+
+<details>
+<summary> EEG Spectral</summary>
+  
 ![Pipeline Graph](figures/EEG_PSD_1.png)
 ![Pipeline Graph](figures/EEG_PSD_2.png)
+</details>
+
+<details>
+<summary> ECG Spectral</summary>
+  
 ![Pipeline Graph](figures/ECG_PSD_1.png)
 ![Pipeline Graph](figures/ECG_PSD_2.png)
+</details>
 
 </details>
 
