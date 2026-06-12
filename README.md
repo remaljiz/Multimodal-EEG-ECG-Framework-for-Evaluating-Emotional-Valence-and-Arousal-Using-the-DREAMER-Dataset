@@ -14,6 +14,11 @@ Two physiological mechanisms were examined. Emotional valence was assessed using
 
 <details>
 <summary>Data Source</summary>
+  
+Raw EEG and ECG signals are sourced from the DREAMER dataset.
+
+- Kaggle: https://www.kaggle.com/datasets/phhasian0710/dreamer/data
+- Katsigiannis, S., & Ramzan, N. (2018). DREAMER: A database for emotion recognition through EEG and ECG signals from wireless low-cost off-the-shelf devices. *IEEE Journal of Biomedical and Health Informatics*, 22(1), 98–107. https://doi.org/10.1109/JBHI.2017.2688959
 
 | Item | Description |
 |------|-------------|
@@ -59,10 +64,3 @@ The data were originally collected to evaluate whether low-cost, wireless, weara
 4. Run the pipeline
 
 </details>
-
-## Dataset
-
-Raw EEG and ECG signals are sourced from the DREAMER dataset. 
-
-- Kaggle: https://www.kaggle.com/datasets/phhasian0710/dreamer/data
-- Katsigiannis, S., & Ramzan, N. (2018). DREAMER: A database for emotion recognition through EEG and ECG signals from wireless low-cost off-the-shelf devices. *IEEE Journal of Biomedical and Health Informatics*, 22(1), 98–107. https://doi.org/10.1109/JBHI.2017.2688959
