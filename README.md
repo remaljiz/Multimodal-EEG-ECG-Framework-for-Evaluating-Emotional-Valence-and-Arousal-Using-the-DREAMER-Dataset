@@ -156,7 +156,7 @@ At ~9–12s, a slow bilateral baseline drift is observed across multiple channel
   </tr>
   <tr>
     <td><img src="figures/EEG_F4.png" width="400"/></td>
-    <td><img src="figures/EEG_F3.png" width="400"/></td>
+    <td><img src="figures/EEG_Alpha.png" width="400"/></td>
   </tr>
 </table>
 
