@@ -110,7 +110,7 @@ https://drive.google.com/file/d/1cDDj1-EVk4VkKCEZEuVvr-xp128mZdFV/view?usp=drive
 <summary>Pipeline Architecture & Workflow</summary>
 <details>
   
-### EEG Pipeline
+<summary> EEG Pipeline </summary>
 
 ![Pipeline Graph](figures/EEG_pipeline_1.png)
 ![Pipeline Graph](figures/EEG_pipeline_2.png)
@@ -131,7 +131,7 @@ https://drive.google.com/file/d/1cDDj1-EVk4VkKCEZEuVvr-xp128mZdFV/view?usp=drive
 
 <details>
   
-### ECG Pipeline
+<summary>ECG Pipeline</summary>
 
 ![Pipeline Graph](figures/ECG_pipeline_1.png)
 ![Pipeline Graph](figures/ECG_pipeline_2.png)
