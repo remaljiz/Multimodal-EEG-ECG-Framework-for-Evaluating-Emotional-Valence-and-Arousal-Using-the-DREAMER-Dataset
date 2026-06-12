@@ -231,10 +231,6 @@ The LF/HF ratio reflects sympathovagal balance (< 0.5: parasympathetic dominance
     <td><img src="figures/P3.png" width="400"/></td>
     <td><img src="figures/P4.png" width="400"/></td>
   </tr>
-  <tr>
-    <td align="center">P3 LF/HF</td>
-    <td align="center">P4 LF/HF</td>
-  </tr>
 </table>
 **Moving Window Analysis:** Dynamic patterns were revealed that static averages obscure. P3 demonstrated gradual emotional accumulation, with fear ratios (S4, S15) climbing over time. P4 exhibited strong initial arousal followed by rapid habituation.
 
@@ -243,17 +239,10 @@ The LF/HF ratio reflects sympathovagal balance (< 0.5: parasympathetic dominance
 
 <details>
 <summary>Neurophysiological Interpretation</summary>
-<table>
-  <tr>
-    <td><img src="figures/Emotion.png" width="400"/></td>
-    <td><img src="figures/Emotion_model.png" width="400"/></td>
-  </tr>
-  <tr>
-    <td align="center">P3 RMSSD</td>
-    <td align="center">P4 RMSSD</td>
-  </tr>
-</table>
 
+
+![Pipeline Graph](figures/Emotion.png)
+![Pipeline Graph](figures/Emotion_model.png)
 By mapping αF4/αF3 and LF/HF values onto Russell's Circumplex Model of Affect, results largely aligned with theoretical expectations. The calm condition (S11) demonstrated higher valence and lower arousal, whereas the fear condition (S15) exhibited lower valence and higher arousal — illustrating that calm and fear elicit distinct, measurable shifts in both frontal cortical asymmetry and autonomic heart rate variability.
 
 **Limitations:**
