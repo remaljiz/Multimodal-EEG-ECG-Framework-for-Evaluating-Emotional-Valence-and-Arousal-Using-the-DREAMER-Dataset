@@ -21,7 +21,7 @@ Two physiological mechanisms were examined. Emotional valence was assessed using
 2. Load `pipeline/HIP_FinalProject_Group10_Pipeline.pyp`
 3. Update the file path in the **ParameterPort** node to your local `.edf` file
 4. Run the pipeline
-5. 
+
 </details>
 
 ## Dataset
