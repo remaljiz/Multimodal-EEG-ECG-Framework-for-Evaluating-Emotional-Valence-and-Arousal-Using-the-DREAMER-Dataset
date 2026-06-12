@@ -182,7 +182,7 @@ https://drive.google.com/file/d/1cDDj1-EVk4VkKCEZEuVvr-xp128mZdFV/view?usp=drive
 
 ## 5. Demo Video
 
-<!-- https://drive.google.com/file/d/1SV_m4vX_XbvGXnDDsQQlw-iSOHm-KB1R/view?usp=sharing -->
+<https://drive.google.com/file/d/1SV_m4vX_XbvGXnDDsQQlw-iSOHm-KB1R/view?usp=sharing >
 
 ## 6. Results & Interpretation
 
