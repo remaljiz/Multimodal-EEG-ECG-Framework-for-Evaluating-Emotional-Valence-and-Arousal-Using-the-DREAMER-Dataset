@@ -180,7 +180,7 @@ https://drive.google.com/file/d/1cDDj1-EVk4VkKCEZEuVvr-xp128mZdFV/view?usp=drive
     <td><img src="figures/ECG_Rdetect.png" width="400"/></td>
   </tr> 
   <tr>
-    <td><img src="figures/Twave.png"/></td>
+    <td><img src="figures/Twave.jpg"/></td>
   </tr>
   <tr>
     <td><img src="figures/ECG_HRV.png" width="400"/></td>
