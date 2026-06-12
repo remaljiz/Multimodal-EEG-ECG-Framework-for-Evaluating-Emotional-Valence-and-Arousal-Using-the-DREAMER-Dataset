@@ -19,13 +19,6 @@ Raw EEG and ECG signals are sourced from the DREAMER dataset.
 
 - Kaggle: https://www.kaggle.com/datasets/phhasian0710/dreamer/data
 - Katsigiannis, S., & Ramzan, N. (2018). DREAMER: A database for emotion recognition through EEG and ECG signals from wireless low-cost off-the-shelf devices. *IEEE Journal of Biomedical and Health Informatics*, 22(1), 98–107. https://doi.org/10.1109/JBHI.2017.2688959
-
-| Item | Description |
-|------|-------------|
-| Dataset name | DREAMER: Database for Emotion Recognition Through EEG and ECG Signals |
-| Main reference | Katsigiannis & Ramzan, IEEE Journal of Biomedical and Health Informatics, 2018 |
-| Data source | Hosted on Zenodo. Original article: "DREAMER: A Database for Emotion Recognition Through EEG and ECG Signals From Wireless Low-cost Off-the-Shelf Devices." ([ieeexplore.ieee.org](https://ieeexplore.ieee.org)) |
-
 </details>
 
 <details>
