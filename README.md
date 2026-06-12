@@ -9,6 +9,15 @@ Two physiological mechanisms were examined. Emotional valence was assessed using
 
 <img width="754" height="123" alt="image" src="https://github.com/user-attachments/assets/83955075-e445-487e-919e-18cf883ab427" />
 
+## NeuroPype Pipeline
+
+![Pipeline Graph](figures/pipeline.png)
+
+### How to Run
+1. Open **NeuroPype Suite**
+2. Load `pipeline/HIP_finalproject.py`
+3. Update the file path in the **ParameterPort** node to your local `.edf` file
+4. Run the pipeline
 
 ## Dataset
 
