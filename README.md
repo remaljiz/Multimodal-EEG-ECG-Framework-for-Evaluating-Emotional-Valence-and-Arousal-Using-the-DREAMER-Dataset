@@ -112,6 +112,7 @@ https://drive.google.com/file/d/1cDDj1-EVk4VkKCEZEuVvr-xp128mZdFV/view?usp=drive
 ### EEG Pipeline
 
 ![Pipeline Graph](figures/EEG_pipeline_1.png)
+![Pipeline Graph](figures/EEG_pipeline_2.png)
 | Node | Function |
 |------|----------|
 | `ImportFile` | Load the EDF file containing synchronized EEG and ECG recordings |
@@ -123,20 +124,17 @@ https://drive.google.com/file/d/1cDDj1-EVk4VkKCEZEuVvr-xp128mZdFV/view?usp=drive
 | `Detrend` | Remove residual low-frequency baseline drift |
 | `ArtifactRemoval (ASR, threshold=15)` | Remove high-amplitude artifacts caused by movement and muscle activity |
 | `Rereferencing (CAR)` | Apply Common Average Reference to reduce spatial bias from electrode placement |
-
-![Pipeline Graph](figures/EEG_pipeline_2.png)
 | `MovingWindow (3s) → MultitaperSpectrum → Averages` | Compute band power for delta, theta, alpha, beta, gamma |
 | `SelectRange (F4) / (F3) → Divide` | Compute FAA ratio (α F4 / α F3) for valence estimation |
 
 ### ECG Pipeline
 
 ![Pipeline Graph](figures/ECG_pipeline_1.png)
+![Pipeline Graph](figures/ECG_pipeline_2.png)
 | Node | Function |
 |------|----------|
 | `SelectRange (ECG_diff)` | Select the ECG channel |
 | `FIRFilter [5, 10, 45, 50 Hz]` | Remove T-wave low-frequency components that cause R-peak misdetection, while preserving R-peak energy (8–20 Hz) |
-
-![Pipeline Graph](figures/ECG_pipeline_2.png)
 | `RDetection (sensitivity=0.25)` | Detect R peaks using adaptive threshold |
 | `HeartRateVariability (window=55s)` | Extract RMSSD and RRI from detected R peaks |
 | `MovingWindow (300s) → WelchSpectrum → SelectRange (LF/HF) → Divide` | Compute LF/HF ratio as autonomic balance indicator |
