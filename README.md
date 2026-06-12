@@ -71,29 +71,30 @@ At ~9–12s, a slow bilateral baseline drift is observed across multiple channel
 
 <details>
 <summary>Spectral & Time-Series Proof</summary>
-
-Time-series signals and Power Spectral Density (PSD) before and after preprocessing (bandpass filtering + artifact removal):
-
-<details>
-<summary> EEG Time-Series</summary>
   
-![Pipeline Graph](figures/EEG_time_1.png)
-![Pipeline Graph](figures/EEG_time_2.png)
-</details>
-
-<details>
-<summary> EEG Spectral</summary>
+  <details>
+  <summary> EEG Time-Series</summary>
+    Time-series signals before and after preprocessing (bandpass filtering + artifact removal):
+    
+  ![Pipeline Graph](figures/EEG_time_1.png)
+  ![Pipeline Graph](figures/EEG_time_2.png)
+  </details>
   
-![Pipeline Graph](figures/EEG_PSD_1.png)
-![Pipeline Graph](figures/EEG_PSD_2.png)
-</details>
-
-<details>
-<summary> ECG Spectral</summary>
+  <details>
+  <summary> EEG Spectral</summary>
+    Power Spectral Density (PSD) before and after preprocessing (bandpass filtering + artifact removal):
+    
+  ![Pipeline Graph](figures/EEG_PSD_1.png)
+  ![Pipeline Graph](figures/EEG_PSD_2.png)
+  </details>
   
-![Pipeline Graph](figures/ECG_PSD_1.png)
-![Pipeline Graph](figures/ECG_PSD_2.png)
-</details>
+  <details>
+  <summary> ECG Spectral</summary>
+    Power Spectral Density (PSD) before and after bandpass filtering
+    
+  ![Pipeline Graph](figures/ECG_PSD_1.png)
+  ![Pipeline Graph](figures/ECG_PSD_2.png)
+  </details>
 
 </details>
 
