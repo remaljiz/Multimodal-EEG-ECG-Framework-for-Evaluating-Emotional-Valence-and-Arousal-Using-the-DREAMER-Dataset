@@ -102,10 +102,6 @@ At ~9–12s, a slow bilateral baseline drift is observed across multiple channel
 
 ![Pipeline Graph](figures/pipeline.png)
 
-Click the below for complete information:
-https://drive.google.com/file/d/1cDDj1-EVk4VkKCEZEuVvr-xp128mZdFV/view?usp=drive_link
-
-
 <details>
 <summary>Pipeline Architecture & Workflow</summary>
 <details>
