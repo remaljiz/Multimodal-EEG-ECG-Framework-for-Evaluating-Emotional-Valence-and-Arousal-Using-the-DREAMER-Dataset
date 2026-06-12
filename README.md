@@ -108,7 +108,8 @@ https://drive.google.com/file/d/1cDDj1-EVk4VkKCEZEuVvr-xp128mZdFV/view?usp=drive
 
 <details>
 <summary>Pipeline Architecture & Workflow</summary>
-
+<details>
+  
 ### EEG Pipeline
 
 ![Pipeline Graph](figures/EEG_pipeline_1.png)
@@ -126,7 +127,10 @@ https://drive.google.com/file/d/1cDDj1-EVk4VkKCEZEuVvr-xp128mZdFV/view?usp=drive
 | `Rereferencing (CAR)` | Apply Common Average Reference to reduce spatial bias from electrode placement |
 | `MovingWindow (3s) → MultitaperSpectrum → Averages` | Compute band power for delta, theta, alpha, beta, gamma |
 | `SelectRange (F4) / (F3) → Divide` | Compute FAA ratio (α F4 / α F3) for valence estimation |
+</details>
 
+<details>
+  
 ### ECG Pipeline
 
 ![Pipeline Graph](figures/ECG_pipeline_1.png)
@@ -138,7 +142,7 @@ https://drive.google.com/file/d/1cDDj1-EVk4VkKCEZEuVvr-xp128mZdFV/view?usp=drive
 | `RDetection (sensitivity=0.25)` | Detect R peaks using adaptive threshold |
 | `HeartRateVariability (window=55s)` | Extract RMSSD and RRI from detected R peaks |
 | `MovingWindow (300s) → WelchSpectrum → SelectRange (LF/HF) → Divide` | Compute LF/HF ratio as autonomic balance indicator |
-
+</details>
 </details>
 
 <details>
