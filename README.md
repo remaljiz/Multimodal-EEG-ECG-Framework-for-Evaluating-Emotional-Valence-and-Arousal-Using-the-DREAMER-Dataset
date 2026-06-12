@@ -14,11 +14,13 @@ Two physiological mechanisms were examined. Emotional valence was assessed using
 
 ![Pipeline Graph](figures/pipeline.png)
 
+<details>
 ### How to Run
 1. Open **NeuroPype Pipeline Designer**
 2. Load `pipeline/HIP_FinalProject_Group10_Pipeline.pyp`
 3. Update the file path in the **ParameterPort** node to your local `.edf` file
 4. Run the pipeline
+</details>
 
 ## Dataset
 
