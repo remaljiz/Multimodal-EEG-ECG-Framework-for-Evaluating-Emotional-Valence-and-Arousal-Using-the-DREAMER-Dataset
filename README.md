@@ -225,6 +225,7 @@ https://youtu.be/fs8q1VzsGEQ
 | P4 | 1.931 | -0.472 | 1.635 | 0.705 |
 
 ![Pipeline Graph](figures/EEG_comparison.png)
+
 An αF4/αF3 ratio > 1 reflects left-hemisphere dominance and positive affect, predicting higher valence for calm than fear. Excluding anomalous negative values in P3S1 and P4S4, results supported this expectation: ratios exceeded 1 in calm conditions (positive affect) and fell below 1 in fear conditions (negative affect).
 
 
@@ -240,6 +241,7 @@ An αF4/αF3 ratio > 1 reflects left-hemisphere dominance and positive affect, p
 | P4 | 55.00 | 49.94 | 54.19 | 63.46 |
 
 ![Pipeline Graph](figures/RMSSD.png)
+
 RMSSD reflects parasympathetic activity (normal range: 20–50 ms; < 20 ms indicates high sympathetic activity). While the expected pattern was calm > fear, most values fell within the normal range with no significant difference between conditions.
 
 
@@ -252,9 +254,6 @@ RMSSD reflects parasympathetic activity (normal range: 20–50 ms; < 20 ms indic
 |-------------|-----------|-----------|------------|------------|
 | P3 | 0.211 | 0.472 | 0.348 | 0.780 |
 | P4 | 0.450 | 0.506 | 0.379 | 0.629 |
-
-
-![Pipeline Graph](figures/LFHF.png
 
 The LF/HF ratio reflects sympathovagal balance (< 0.5: parasympathetic dominance; 0.5–2.0: normal range; > 2.5: sympathetic hyperactivation). Results aligned with the expected calm < fear pattern: fear conditions consistently elicited higher LF/HF ratios. Notably, P3 showed ratios < 0.5 during calm, highlighting pronounced parasympathetic activity.
 
