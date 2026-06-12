@@ -102,6 +102,10 @@ At ~9–12s, a slow bilateral baseline drift is observed across multiple channel
 
 ![Pipeline Graph](figures/pipeline.png)
 
+Click the below for complete information:
+https://drive.google.com/file/d/1cDDj1-EVk4VkKCEZEuVvr-xp128mZdFV/view?usp=drive_link
+
+
 <details>
 <summary>Pipeline Architecture & Workflow</summary>
 <details>
@@ -145,6 +149,20 @@ At ~9–12s, a slow bilateral baseline drift is observed across multiple channel
 <summary>Parameter Justification</summary>
 
 ### EEG Parameters
+<table>
+  <tr>
+    <td><img src="figures/EEG_FIR.png" width="400"/></td>
+    <td><img src="figures/EEG_AR.png" width="400"/></td>
+  </tr>
+  <tr>
+    <td><img src="figures/EEG_Movingwindow.png" width="400"/></td>
+    <td><img src="figures/EEG_Average.png" width="400"/></td>
+  </tr>
+  <tr>
+    <td><img src="figures/EEG_F4.png" width="400"/></td>
+    <td><img src="figures/EEG_F3.png" width="400"/></td>
+  </tr>
+</table>
 
 | Parameter | Justification |
 |-----------|--------------|
@@ -155,6 +173,28 @@ At ~9–12s, a slow bilateral baseline drift is observed across multiple channel
 | `SelectRange (space & frequency)` | Isolates frontal electrodes F3 and F4, then targets frequency index 2 to extract alpha band power (8–12 Hz) |
 
 ### ECG Parameters
+
+<table>
+  <tr>
+    <td><img src="figures/ECG_FIR.png" width="400"/></td>
+    <td><img src="figures/EEG_Rdetect.png" width="400"/></td>
+  </tr> 
+  <tr>
+    <td><img src="figures/Twave.png"/></td>
+  </tr>
+  <tr>
+    <td><img src="figures/ECG_HRV.png" width="400"/></td>
+    <td><img src="figures/ECG_Movingwindow.png" width="400"/></td>
+  </tr>
+  <tr>
+    <td><img src="figures/ECG_RMSSD.png" width="400"/></td>
+    <td><img src="figures/ECG_RRI.png" width="400"/></td>
+  </tr>
+  <tr>
+    <td><img src="figures/ECG_LF.png" width="400"/></td>
+    <td><img src="figures/ECG_HF.png" width="400"/></td>
+  </tr>
+</table>
 
 | Parameter | Justification |
 |-----------|--------------|
