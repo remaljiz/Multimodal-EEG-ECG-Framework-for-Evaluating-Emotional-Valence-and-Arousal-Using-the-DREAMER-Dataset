@@ -197,7 +197,7 @@ At ~9–12s, a slow bilateral baseline drift is observed across multiple channel
 | `FIRFilter [5, 10, 45, 50 Hz]` | Removes baseline wander and electrical noise. High-pass cutoff intentionally raised to 10 Hz (stopband at 5 Hz) to suppress abnormally high-amplitude T-waves in this dataset, isolating sharp QRS complexes for accurate R-peak detection |
 | `RDetection (sensitivity=0.25, window=5s)` | Identifies individual heartbeats using a 5.0-second processing window with a relative amplitude threshold of 0.25 |
 | `HeartRateVariability (window=55s)` | 55-second sliding window extracts continuous RRI and RMSSD features |
-| `MovingWindow (300s)` | Buffers RRI for spectral frequency analysis |
+| `MovingWindow (55s)` | Buffers RRI for spectral frequency analysis |
 | `SelectRange (LF/HF)` | Selects 0.04–0.15 Hz (LF) and 0.15–0.4 Hz (HF) bands for autonomic balance calculation |
 
 </details>
