@@ -1,5 +1,5 @@
 # Multimodal EEG ECG Framework for Evaluating Emotional Valence and Arousal Using the DREAMER Dataset
-## Introduction
+## 1. Introduction
 Affective information processing is a fundamental cognitive mechanism through which humans evaluate environmental stimuli and adjust attention, behavior, and physiological states. According to Russell’s Circumplex Model of Affect, emotions can be described along two orthogonal dimensions: valence, referring to the degree of pleasantness, and arousal, referring to the intensity of physiological activation. Examining how neural and cardiac signals change during emotional evaluation is therefore important for understanding human affective responses and improving human-computer interaction.
 
 <img width="739" height="388" alt="image" src="https://github.com/user-attachments/assets/d5cc5939-8d6e-4daa-b5cf-be67fbc22fd5" />
@@ -9,6 +9,42 @@ This project investigates these responses using the DREAMER dataset, which provi
 Two physiological mechanisms were examined. Emotional valence was assessed using EEG-derived Frontal Alpha Asymmetry (FAA), calculated from alpha power in the F3 and F4 frontal channels. Based on Davidson’s Approach-Withdrawal Model, stronger relative left-frontal activation indicates positive affect, whereas right-frontal dominance reflects negative affect. Autonomic arousal was evaluated using ECG-derived Heart Rate Variability (HRV), including RMSSD and the LF/HF ratio. RMSSD reflects parasympathetic regulation, while LF/HF indicates autonomic balance. By integrating EEG and ECG features, this project provides an interpretable multimodal framework for characterizing emotional responses to dynamic visual stimuli.
 
 <img width="754" height="123" alt="image" src="https://github.com/user-attachments/assets/83955075-e445-487e-919e-18cf883ab427" />
+
+## 2. Data Description
+
+<details>
+<summary>Data Source</summary>
+
+| Item | Description |
+|------|-------------|
+| Dataset name | DREAMER: Database for Emotion Recognition Through EEG and ECG Signals |
+| Main reference | Katsigiannis & Ramzan, IEEE Journal of Biomedical and Health Informatics, 2018 |
+| Data source | Hosted on Zenodo. Original article: "DREAMER: A Database for Emotion Recognition Through EEG and ECG Signals From Wireless Low-cost Off-the-Shelf Devices." ([ieeexplore.ieee.org](https://ieeexplore.ieee.org)) |
+
+</details>
+
+<details>
+<summary>Recording Device Info</summary>
+
+| Item | Description |
+|------|-------------|
+| Signals recorded | EEG and ECG |
+| EEG device | Emotiv EPOC wireless EEG headset |
+| EEG channels | 14 channels |
+| EEG sampling rate | 128 Hz |
+| ECG device | Shimmer2 ECG sensor |
+| ECG channels | 2 channels |
+| ECG sampling rate | 256 Hz |
+| Emotion labels | Participants rated valence, arousal, and dominance after each stimulus |
+
+</details>
+
+<details>
+<summary>Original Purpose</summary>
+
+The data were originally collected to evaluate whether low-cost, wireless, wearable EEG/ECG devices can be used for affective computing and emotion recognition.
+
+</details>
 
 ## NeuroPype Pipeline
 
