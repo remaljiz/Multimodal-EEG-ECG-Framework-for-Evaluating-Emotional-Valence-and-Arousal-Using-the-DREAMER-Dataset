@@ -194,10 +194,10 @@ https://drive.google.com/file/d/1cDDj1-EVk4VkKCEZEuVvr-xp128mZdFV/view?usp=drive
 | P3 | -4.969 | 0.585 | 1.105 | 0.590 |
 | P4 | 1.931 | -0.472 | 1.635 | 0.705 |
 
+![Pipeline Graph](figures/EEG_comparison.png)
 An αF4/αF3 ratio > 1 reflects left-hemisphere dominance and positive affect, predicting higher valence for calm than fear. Excluding anomalous negative values in P3S1 and P4S4, results supported this expectation: ratios exceeded 1 in calm conditions (positive affect) and fell below 1 in fear conditions (negative affect).
 
 
-![Pipeline Graph](figures/EEG_comparison.png)
 
 </details>
 
@@ -209,9 +209,9 @@ An αF4/αF3 ratio > 1 reflects left-hemisphere dominance and positive affect, p
 | P3 | 35.45 | 47.43 | 45.08 | 39.22 |
 | P4 | 55.00 | 49.94 | 54.19 | 63.46 |
 
+![Pipeline Graph](figures/RMSSD.png)
 RMSSD reflects parasympathetic activity (normal range: 20–50 ms; < 20 ms indicates high sympathetic activity). While the expected pattern was calm > fear, most values fell within the normal range with no significant difference between conditions.
 
-![Pipeline Graph](figures/RMSSD.png)
 
 </details>
 
@@ -223,20 +223,36 @@ RMSSD reflects parasympathetic activity (normal range: 20–50 ms; < 20 ms indic
 | P3 | 0.211 | 0.472 | 0.348 | 0.780 |
 | P4 | 0.450 | 0.506 | 0.379 | 0.629 |
 
-The LF/HF ratio reflects sympathovagal balance (< 0.5: parasympathetic dominance; 0.5–2.0: normal range; > 2.5: sympathetic hyperactivation). Results aligned with the expected calm < fear pattern: fear conditions consistently elicited higher LF/HF ratios. Notably, P3 showed ratios < 0.5 during calm, highlighting pronounced parasympathetic activity.
-
-**Moving Window Analysis:** Dynamic patterns were revealed that static averages obscure. P3 demonstrated gradual emotional accumulation, with fear ratios (S4, S15) climbing over time. P4 exhibited strong initial arousal followed by rapid habituation.
-
 
 ![Pipeline Graph](figures/LFHF.png)
+The LF/HF ratio reflects sympathovagal balance (< 0.5: parasympathetic dominance; 0.5–2.0: normal range; > 2.5: sympathetic hyperactivation). Results aligned with the expected calm < fear pattern: fear conditions consistently elicited higher LF/HF ratios. Notably, P3 showed ratios < 0.5 during calm, highlighting pronounced parasympathetic activity.
+<table>
+  <tr>
+    <td><img src="figures/P3.png" width="400"/></td>
+    <td><img src="figures/P4.png" width="400"/></td>
+  </tr>
+  <tr>
+    <td align="center">P3 LF/HF</td>
+    <td align="center">P4 LF/HF</td>
+  </tr>
+</table>
+**Moving Window Analysis:** Dynamic patterns were revealed that static averages obscure. P3 demonstrated gradual emotional accumulation, with fear ratios (S4, S15) climbing over time. P4 exhibited strong initial arousal followed by rapid habituation.
+
 
 </details>
 
 <details>
 <summary>Neurophysiological Interpretation</summary>
-
-![Pipeline Graph](figures/Emotion.png)
-![Pipeline Graph](figures/Emotion_model.png)
+<table>
+  <tr>
+    <td><img src="figures/Emotion.png" width="400"/></td>
+    <td><img src="figures/Emotion_model.png" width="400"/></td>
+  </tr>
+  <tr>
+    <td align="center">P3 RMSSD</td>
+    <td align="center">P4 RMSSD</td>
+  </tr>
+</table>
 
 By mapping αF4/αF3 and LF/HF values onto Russell's Circumplex Model of Affect, results largely aligned with theoretical expectations. The calm condition (S11) demonstrated higher valence and lower arousal, whereas the fear condition (S15) exhibited lower valence and higher arousal — illustrating that calm and fear elicit distinct, measurable shifts in both frontal cortical asymmetry and autonomic heart rate variability.
 
